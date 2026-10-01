@@ -2,10 +2,14 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape>
-            <solid android:color="@color/white" />
+            <gradient
+                android:angle="270"
+                android:startColor="#0B0B0F"
+                android:centerColor="#12121A"
+                android:endColor="#0B0B0F" />
         </shape>
     </item>
-    <item >
+    <item>
         <bitmap
             android:gravity="center"
             android:src="@drawable/iv_splash" />

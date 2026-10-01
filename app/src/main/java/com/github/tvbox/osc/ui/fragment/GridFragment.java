@@ -178,7 +178,7 @@ public class GridFragment extends BaseLazyFragment {
     private void initView() {
         this.createView();
         mGridView.setAdapter(gridAdapter);
-        mGridView.setLayoutManager(new V7GridLayoutManager(this.mContext, 3));
+        mGridView.setLayoutManager(new V7GridLayoutManager(this.mContext, 2));
 
         gridAdapter.setOnLoadMoreListener(new BaseQuickAdapter.RequestLoadMoreListener() {
             @Override

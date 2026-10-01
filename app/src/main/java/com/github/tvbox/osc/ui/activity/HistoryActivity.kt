@@ -29,7 +29,7 @@ class HistoryActivity : BaseVbActivity<ActivityHistoryBinding>() {
         setLoadSir(mBinding.mGridView)
 
         mBinding.mGridView.setHasFixedSize(true)
-        mBinding.mGridView.setLayoutManager(GridLayoutManager(this, 3))
+        mBinding.mGridView.setLayoutManager(GridLayoutManager(this, 2))
         historyAdapter = HistoryAdapter()
         mBinding.mGridView.setAdapter(historyAdapter)
 

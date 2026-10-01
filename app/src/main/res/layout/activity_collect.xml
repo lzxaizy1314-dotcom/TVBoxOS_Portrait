@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_page"
     android:orientation="vertical">
 
     <com.hjq.bar.TitleBar
@@ -11,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         app:title="收藏"
+        app:titleColor="@color/text_foreground"
         app:lineVisible="false"
         app:rightIcon="@drawable/ic_clear"/>
 
@@ -22,12 +24,13 @@
         android:layout_marginVertical="10dp"
         android:visibility="gone"
         tools:visibility="visible"
+        android:textColor="@color/text_sub_foreground"
         android:text="长按取消收藏"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mGridView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingHorizontal="10dp"
+        android:paddingHorizontal="8dp"
         android:paddingTop="10dp"/>
 </LinearLayout>

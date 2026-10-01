@@ -46,18 +46,20 @@ android {
         config {
             keyAlias 'TVBoxOSC'
             keyPassword 'TVBoxOSC'
-            storeFile file('..\\TVBoxOSC.jks')
+            storeFile file('../TVBoxOSC.jks')
             storePassword 'TVBoxOSC'
         }
     }
 
+    def hasReleaseKey = file('../TVBoxOSC.jks').exists()
+
     buildTypes {
         debug {
-            signingConfig signingConfigs.config
+            signingConfig hasReleaseKey ? signingConfigs.config : signingConfigs.debug
         }
 
         release {
-            signingConfig signingConfigs.config
+            signingConfig hasReleaseKey ? signingConfigs.config : signingConfigs.debug
             minifyEnabled false
         }
     }

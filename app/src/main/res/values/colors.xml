@@ -1,72 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- ======================================================= -->
+    <!-- 爱奇艺风格深色主题色板                                    -->
+    <!-- ======================================================= -->
 
-    <!--应用的主要色调,actionBar默认使用该颜色,Toolbar导航栏的底色-->
-    <color name="colorPrimary">#567df4</color>
-    <!--CheckBox,RadioButton,SwitchCompat等一般控件的选中效果默认采用该颜色-->
-    <color name="colorAccent">#3e4fb1</color>
-    <!--    默认window窗口(activity)背景颜色-->
-    <color name="windowBackground">#fff</color>
+    <!-- 品牌主色：爱奇艺绿 -->
+    <color name="color_theme">#00BE06</color>
+    <color name="color_theme_pressed">#009A05</color>
+    <color name="color_theme_dim">#3300BE06</color>
+    <color name="color_theme_bright">#16D64F</color>
+    <color name="color_theme_gradient_end">#00E24B</color>
 
-    <color name="bg_gray">#f7f7f7</color>
-    <color name="gray_darker">#7f7b79</color>
-    <!--    深灰点击透明度-->
-    <color name="gray_darker_press_alpha">#3C808080</color>
+    <!-- 基础色 -->
+    <color name="colorPrimary">#00BE06</color>
+    <color name="colorAccent">#00A005</color>
+    <color name="colorPrimaryDark">#0B0B0F</color>
 
-    <!--    通用颜色-->
+    <!-- 背景层级（越靠上越亮） -->
+    <color name="windowBackground">#0B0B0F</color>
+    <color name="bg_page">#0B0B0F</color>
+    <color name="bg_gray">#16161C</color>
+    <color name="bg_card">#16161C</color>
+    <color name="bg_card_elevated">#20202B</color>
+    <color name="bg_popup">#1B1B24</color>
+    <color name="bg_input">#23232E</color>
+    <color name="bg_chip">#22222C</color>
+    <color name="divider">#1FFFFFFF</color>
+
+    <!-- 文字 -->
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="text_foreground">#050505</color>
-    <color name="text_sub_foreground">#787878</color>
-    <color name="light_gray_color">#e6e6e6</color>
-    <!--    警示黄色-->
-    <color name="warn">#ffcb6b</color>
-    <color name="red">#ff4444</color>
+    <color name="text_foreground">#F2F2F5</color>
+    <color name="text_primary">#F2F2F5</color>
+    <color name="text_sub_foreground">#9A9AA6</color>
+    <color name="text_tertiary">#6E6E7A</color>
+    <color name="text_hint">#5C5C68</color>
+    <color name="gray_darker">#6E6E7A</color>
+    <color name="gray_darker_press_alpha">#3C808080</color>
+    <color name="light_gray_color">#2A2A34</color>
+    <color name="disable_text">#5A5A66</color>
+    <color name="disable_gray">#6E6E7A</color>
 
-    <color name="disable_text">#b3b3b3</color>
+    <!-- 状态 / 强调 -->
+    <color name="warn">#FFB300</color>
+    <color name="red">#FF4D4F</color>
+    <color name="orange">#FF7A00</color>
 
-    <!--    带点透明度(e6 90/100不透明)的pop-->
-    <color name="bg_popup">#FFFFFF</color>
+    <!-- VIP 金色 -->
+    <color name="vip_gold">#F5C451</color>
+    <color name="vip_gold_deep">#E0A93A</color>
+    <color name="vip_gold_dim">#33F5C451</color>
 
-    <!--    制定颜色-->
-    <!--    页面背景色,activity.fragment等-->
-    <color name="bg_page">#000000</color>
-    <!--    不可用灰色颜色-->
-    <color name="disable_gray">#cccccc</color>
+    <!-- 角标 -->
+    <color name="badge_green">#00BE06</color>
+    <color name="badge_gold">#F5C451</color>
+    <color name="badge_glass">#CC0B0B0F</color>
 
-    <color name="orange">#ff4600</color>
+    <!-- 会员卡渐变 -->
+    <color name="member_card_start">#2A2418</color>
+    <color name="member_card_end">#1A1A22</color>
 
-    <color name="color_6200EE">#6200EE</color>
-    <color name="color_3700B3">#3700B3</color>
-    <color name="color_03DAC5">#03DAC5</color>
-    <color name="title_fouse_n">#ffce7900</color>
-    <color name="color_1890FF">#1890FF</color>
-    <color name="color_FFB800">#FF6600</color>
-    <color name="color_00FF0A">#00FF0A</color>
-    <color name="color_CBF46A">#CBF46A</color>
-    <color name="color_FF90CA09">#90CA09</color>
-    <color name="color_BD0CADE2">#BD0CADE2</color>
-    <color name="color_FF0057">#FF0057</color>
-    <color name="color_FF5F00">#FF5F00</color>
-    <color name="color_FFB6C1">#FFB6C1</color>
-    <color name="color_3D3D3D">#3D3D3D</color>
-    <color name="color_32364E">#32364E</color>
-    <color name="color_6632364E">#6632364E</color>
+    <!-- 兼容旧命名（统一映射到新主题，避免逐个改引用） -->
+    <color name="color_6200EE">#00BE06</color>
+    <color name="color_3700B3">#009A05</color>
+    <color name="color_03DAC5">#00BE06</color>
+    <color name="title_fouse_n">#00BE06</color>
+    <color name="color_1890FF">#00BE06</color>
+    <color name="color_FFB800">#00BE06</color>
+    <color name="color_00FF0A">#00BE06</color>
+    <color name="color_CBF46A">#16D64F</color>
+    <color name="color_FF90CA09">#00BE06</color>
+    <color name="color_BD0CADE2">#00BE06</color>
+    <color name="color_FF0057">#20202B</color>
+    <color name="color_FF5F00">#00BE06</color>
+    <color name="color_FFB6C1">#F5C451</color>
+    <color name="color_3D3D3D">#2A2A34</color>
+    <color name="color_32364E">#20202B</color>
+    <color name="color_6632364E">#CC16161C</color>
     <color name="color_CCFFFFFF">#BBFFFFFF</color>
-    <color name="color_0CADE2">#0CADE2</color>
+    <color name="color_0CADE2">#00BE06</color>
     <color name="color_6CFFFFFF">#6CFFFFFF</color>
     <color name="color_66000000">#66000000</color>
     <color name="color_99000000">#99000000</color>
-    <color name="color_02F8E1">#02F8E1</color>
-    <color name="color_353744">#353744</color>
-    <color name="color_CC353744">#CC353744</color>
-    <color name="color_6C3D3D3D">#6c3d3d3d</color>
+    <color name="color_02F8E1">#00BE06</color>
+    <color name="color_353744">#20202B</color>
+    <color name="color_CC353744">#CC20202B</color>
+    <color name="color_6C3D3D3D">#6C20202B</color>
     <color name="color_BBFFFFFF">#bbffffff</color>
     <color name="color_FFFFFF">#ffffffff</color>
     <color name="color_33FFFFFF">#33ffffff</color>
     <color name="color_99FFFFFF">#4D777373</color>
-    <color name="color_59353744">#59353744</color>
-    <color name="color_80FF0057">#66FF0057</color>
+    <color name="color_59353744">#5920202B</color>
+    <color name="color_80FF0057">#6600BE06</color>
 
 </resources>

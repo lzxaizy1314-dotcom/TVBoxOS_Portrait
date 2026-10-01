@@ -1,11 +1,20 @@
 <resources>
 
 
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
         <!--应用的主要色调,actionBar默认使用该颜色,Toolbar导航栏的底色-->
         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <!--CheckBox,RadioButton,SwitchCompat等一般控件的选中效果默认采用该颜色-->
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSurface">@color/bg_card</item>
+        <item name="colorOnSurface">@color/text_foreground</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/text_foreground</item>
+        <item name="android:textColorSecondary">@color/text_sub_foreground</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:statusBarColor">@color/bg_page</item>
+        <item name="android:navigationBarColor">@color/bg_page</item>
         <!--默认window窗口(activity)背景颜色,根据主题修改该属性可 避免某些情况activity跳转/回跳会白屏(出现与主题相反的颜色)-->
         <item name="android:windowBackground">@color/windowBackground</item>
     </style>
@@ -143,7 +152,7 @@
         <item name="buttonBarButtonStyle">@style/FileChooserButtonStyle1</item>
     </style>
     <style name="FileChooserButtonStyle1" parent="FileChooserButtonStyle">
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/text_foreground</item>
     </style>
 <!--    选择器弹窗样式结束-->
 
@@ -171,5 +180,54 @@
         <item name="android:textColor">@color/text_foreground</item>
     </style>
 
+    <!-- ======================================================= -->
+    <!-- 爱奇艺风格组件样式                                       -->
+    <!-- ======================================================= -->
+
+    <!-- 分区标题 -->
+    <style name="IQIYI.SectionTitle">
+        <item name="android:textColor">@color/text_foreground</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- 筛选胶囊 chip -->
+    <style name="IQIYI.Chip">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_sub_foreground</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:background">@drawable/bg_chip_selector</item>
+    </style>
+
+    <!-- 主按钮（爱奇艺绿） -->
+    <style name="IQIYI.Button.Green" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="backgroundTint">@color/color_theme</item>
+        <item name="rippleColor">@color/color_theme_pressed</item>
+        <item name="cornerRadius">24dp</item>
+    </style>
+
+    <!-- 次按钮（深色） -->
+    <style name="IQIYI.Button.Dark" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textColor">@color/text_foreground</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="backgroundTint">@color/bg_card_elevated</item>
+        <item name="rippleColor">@color/color_theme_dim</item>
+        <item name="cornerRadius">24dp</item>
+    </style>
 
 </resources>

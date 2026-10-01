@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_page"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".ui.activity.SubscriptionActivity">
@@ -13,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="订阅管理"
+        app:titleColor="@color/text_foreground"
         app:rightIcon="@drawable/ic_add_24"
         >
 

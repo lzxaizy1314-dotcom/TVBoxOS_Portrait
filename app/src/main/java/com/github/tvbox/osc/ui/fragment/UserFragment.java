@@ -75,7 +75,7 @@ public class UserFragment extends BaseLazyFragment {
         super.onFragmentResume();
 
         tvHotList1.setHasFixedSize(true);
-        tvHotList1.setLayoutManager(new GridLayoutManager(this.mContext, 3));
+        tvHotList1.setLayoutManager(new GridLayoutManager(this.mContext, 2));
     }
 
     @Override

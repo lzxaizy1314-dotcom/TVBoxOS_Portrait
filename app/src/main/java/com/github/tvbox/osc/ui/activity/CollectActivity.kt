@@ -33,7 +33,7 @@ class CollectActivity : BaseVbActivity<ActivityCollectBinding>() {
         setLoadSir(mBinding.mGridView)
 
         mBinding.mGridView.setHasFixedSize(true)
-        mBinding.mGridView.setLayoutManager(GridLayoutManager(this, 3))
+        mBinding.mGridView.setLayoutManager(GridLayoutManager(this, 2))
         mBinding.mGridView.setAdapter(collectAdapter)
         mBinding.titleBar.rightView.setOnClickListener {
             XPopup.Builder(this)
