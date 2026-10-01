@@ -19,6 +19,12 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
+      - name: Build & publish DLNA-Cast to mavenLocal
+        run: |
+          git clone --depth 1 --branch v2.0.0 https://github.com/devin1014/DLNA-Cast.git /tmp/DLNA-Cast
+          chmod +x /tmp/DLNA-Cast/gradlew
+          cd /tmp/DLNA-Cast
+          ./gradlew :dlna-core:publishToMavenLocal :dlna-dmc:publishToMavenLocal --no-daemon -x lint
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
       - name: Build With Gradle
